@@ -12,6 +12,7 @@ public class Package {
     @JsonProperty("packageId")
     public String getJsScript() {
     }
+    @JsonProperty("functionName")
     public List<Test> getTests() {
     }
     public void setJsScript(String jsScript) {
