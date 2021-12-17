@@ -22,6 +22,7 @@ import java.util.concurrent.CompletionStage;
 
 public class App extends AllDirectives {
     public static final int PORT = 8080;
+    public static final int TIMEOUT = 5000;
     private Route post(ActorRef routerActor) {
         return entity(Jackson.unmarshaller(Package.class),
                 msg -> {
