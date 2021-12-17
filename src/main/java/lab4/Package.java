@@ -12,3 +12,5 @@ import java.util.List;
     }
     public List<Test> getTests() {
     }
+    public void setJsScript(String jsScript) {
+    }
