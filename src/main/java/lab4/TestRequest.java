@@ -11,6 +11,7 @@ public final class TestRequest {
         return function;
 
     public List<String> getArguments() {
+        return arguments;
 
     public String getRightResult() {
         return rightResult;
