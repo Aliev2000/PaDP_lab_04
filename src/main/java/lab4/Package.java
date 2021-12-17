@@ -27,6 +27,7 @@ public class Package {
     @JsonProperty("functionName")
     public void setFunctionName(String functionName) {
     }
+    @JsonProperty("tests")
     public void setTests(List<Test> tests) {
         this.tests = tests;
 }
