@@ -7,3 +7,5 @@ import akka.actor.*;
 import akka.routing.RoundRobinPool;
 
 public class RouterActor extends AbstractActor {
+    public AbstractActor.Receive createReceive() {
+
