@@ -18,3 +18,5 @@ public class Package {
     }
     public void setJsScript(String jsScript) {
     }
+    public void setFunctionName(String functionName) {
+    }
