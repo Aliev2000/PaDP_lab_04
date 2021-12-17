@@ -22,4 +22,10 @@ import java.util.concurrent.CompletionStage;
 
 public class App extends AllDirectives {
     private Route post(ActorRef routerActor) {
+        return entity(Jackson.unmarshaller(Package.class),
+                msg -> {
+                    routerActor.tell(msg, ActorRef.noSender());
+                    return complete("Test started!");
+                }
+        );
 
