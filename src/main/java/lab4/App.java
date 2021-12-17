@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
 public class App extends AllDirectives {
+    public static final int PORT = 8080;
     private Route post(ActorRef routerActor) {
         return entity(Jackson.unmarshaller(Package.class),
                 msg -> {
