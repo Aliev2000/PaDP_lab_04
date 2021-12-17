@@ -6,6 +6,7 @@ public final class TestResult {
         this.result = result;
 
     public String getResult() {
+        return result;
 
     public String toString() {
         return String.format("lab4.TestResult{packageId=%d, result='%s'}", packageId, result);
