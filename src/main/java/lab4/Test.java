@@ -14,6 +14,7 @@ public class Test {
     @JsonProperty("testName")
     @JsonProperty("expectedResult")
     private String expectedResult;
+    @JsonProperty("params")
     public void setTestName(String testName) {
         this.testName = testName;
 
