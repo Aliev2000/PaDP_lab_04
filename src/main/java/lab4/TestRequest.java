@@ -4,6 +4,7 @@ import java.util.List;
 
 public final class TestRequest {
     private final String function;
+    private final List<String> arguments;
     private final String rightResult;
     private final int packageId;
 
