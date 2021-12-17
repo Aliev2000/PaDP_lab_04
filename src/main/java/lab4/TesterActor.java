@@ -11,6 +11,8 @@ import javax.script.ScriptException;
 
 
 public class TesterActor extends AbstractActor {
+    private final ActorRef repository;
+
     public TesterActor(ActorRef repository) {
         this.repository = repository;
 
