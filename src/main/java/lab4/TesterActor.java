@@ -39,4 +39,7 @@ public class TesterActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
+        return ReceiveBuilder.create()
+                .match(TestRequest.class, this::testRun)
+                .build();
 }
