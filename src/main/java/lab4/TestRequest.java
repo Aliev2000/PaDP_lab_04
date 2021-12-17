@@ -11,4 +11,5 @@ public final class TestRequest {
         return function;
 
     public String getRightResult() {
+        return rightResult;
 
