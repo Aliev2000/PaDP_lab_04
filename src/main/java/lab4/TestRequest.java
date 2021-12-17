@@ -19,6 +19,7 @@ public final class TestRequest {
         return function;
 
     public String getScript() {
+        return script;
 
     public List<String> getArguments() {
         return arguments;
