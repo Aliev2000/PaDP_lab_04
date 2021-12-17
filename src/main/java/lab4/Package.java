@@ -21,6 +21,7 @@ public class Package {
     @JsonProperty("jsScript")
     public void setJsScript(String jsScript) {
     }
+    @JsonProperty("functionName")
     public void setFunctionName(String functionName) {
     }
     public void setTests(List<Test> tests) {
