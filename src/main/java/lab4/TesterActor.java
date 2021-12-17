@@ -35,4 +35,6 @@ public class TesterActor extends AbstractActor {
         engine.eval(request.getScript());
         Invocable invocable = (Invocable) engine;
                 .toArray(new String[request.getArguments().size()]);
+    }
+
     @Override
