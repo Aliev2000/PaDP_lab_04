@@ -14,3 +14,4 @@ public class Test {
     @JsonProperty("testName")
     @JsonProperty("expectedResult")
     private String expectedResult;
+    @JsonProperty("expectedResult")
