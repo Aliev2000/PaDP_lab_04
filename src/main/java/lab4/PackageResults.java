@@ -5,6 +5,8 @@ public class PackageResults {
     private final ArrayList<String> results;
     private final int packageId;
 
+    public ArrayList<String> getResults() {
+
     public PackageResults(int packageId, ArrayList<String> results) {
         this.results = results;
         this.packageId = packageId;
