@@ -2,6 +2,8 @@ package lab4;
 
 public final class TestResult {
     private final int packageId;
+    private final String result;
+
     public TestResult(int packageId, String result) {
         this.packageId = packageId;
         this.result = result;
