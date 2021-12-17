@@ -8,6 +8,8 @@ import akka.routing.RoundRobinPool;
 
 public class RouterActor extends AbstractActor {
     private final ActorRef repository;
+    private final ActorRef tester;
+
     public RouterActor() {
         repository = getContext().actorOf(Props.create(RepositoryActor.class));
         tester = getContext().actorOf(new RoundRobinPool(5)
