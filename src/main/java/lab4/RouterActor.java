@@ -8,6 +8,8 @@ import akka.routing.RoundRobinPool;
 
 public class RouterActor extends AbstractActor {
     private final ActorRef repository;
+    public RouterActor() {
+
     @Override
     public AbstractActor.Receive createReceive() {
         return ReceiveBuilder.create()
