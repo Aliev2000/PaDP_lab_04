@@ -16,6 +16,7 @@ public class Package {
     @JsonProperty("packageId")
     public String getPackageId() {
     }
+    @JsonProperty("jsScript")
     public String getJsScript() {
     }
     @JsonProperty("functionName")
