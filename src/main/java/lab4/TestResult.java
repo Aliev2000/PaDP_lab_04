@@ -5,3 +5,5 @@ public final class TestResult {
         this.packageId = packageId;
         this.result = result;
 
+    public String toString() {
+}
