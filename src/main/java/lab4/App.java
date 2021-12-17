@@ -24,6 +24,10 @@ public class App extends AllDirectives {
     public static final int PORT = 8080;
     public static final int TIMEOUT = 5000;
     private Route createRoute(ActorSystem system) {
+        ActorRef routerActor = system.actorOf(Props.create(RouterActor.class));
+        return route(post(routerActor),
+                    get(routerActor)
+        );
 
     private Route post(ActorRef routerActor) {
         return entity(Jackson.unmarshaller(Package.class),
