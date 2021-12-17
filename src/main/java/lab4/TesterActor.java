@@ -15,4 +15,13 @@ public class TesterActor extends AbstractActor {
         repository.tell(new TestResult(packageId, result), ActorRef.noSender());
 
     public void testRun(TestRequest request) {
+        String result;
+        try {
+            result = eval(request).equals(request.getRightResult()) ? "Test passed" : "Test not passed";
+        } catch (ScriptException exception) {
+            result = "ScriptException: " + exception.getLocalizedMessage();
+        } catch (NoSuchMethodException exception) {
+            result = "NoSuchMethodException: " + exception.getLocalizedMessage();
+        }
+        sendToRepository(request.getPackageId(), result);
 
