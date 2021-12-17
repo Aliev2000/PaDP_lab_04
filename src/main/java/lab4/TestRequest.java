@@ -10,6 +10,8 @@ public final class TestRequest {
     public String getFunction() {
         return function;
 
+    public List<String> getArguments() {
+
     public String getRightResult() {
         return rightResult;
 
