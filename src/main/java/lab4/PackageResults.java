@@ -8,6 +8,8 @@ public class PackageResults {
     public ArrayList<String> getResults() {
         return results;
 
+    public int getPackageId() {
+
     public PackageResults(int packageId, ArrayList<String> results) {
         this.results = results;
         this.packageId = packageId;
