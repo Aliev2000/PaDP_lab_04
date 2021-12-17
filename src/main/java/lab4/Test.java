@@ -29,3 +29,5 @@ public class Test {
         this.expectedResult = expectedResult;
 
     @JsonProperty("params")
+    public void setParams(List<String> params) {
+}
