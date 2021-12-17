@@ -27,6 +27,8 @@ public class Package {
     public List<Test> getTests() {
     }
     @JsonProperty("packageId")
+    public void setPackageId(String packageId) {
+    }
     @JsonProperty("jsScript")
     public void setJsScript(String jsScript) {
     }
