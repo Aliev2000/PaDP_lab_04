@@ -22,6 +22,8 @@ public class RepositoryActor extends AbstractActor {
         repository.get(id).add(result);
     }
     private void getPackageResults(PackageResultsRequest m) {
+        int id = m.getPackageId();
+        sender().tell(new PackageResults(id, repository.get(id)),
     }
     @Override
     public Receive createReceive() {
