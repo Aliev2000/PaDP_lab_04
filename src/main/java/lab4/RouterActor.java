@@ -28,6 +28,10 @@ public class RouterActor extends AbstractActor {
                 .map(test -> generateTestRequest(pack, test))
     }
     private TestRequest generateTestRequest(Package pack, Test test) {
+        return new TestRequest(pack.getFunctionName(),
+                pack.getJsScript(),
+                test.getParams(),
+                test.getExpectedResult(),
     }
     private void getPackageResults(PackageResultsRequest request) {
         repository.tell(request, getSender());
