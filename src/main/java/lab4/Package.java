@@ -7,6 +7,8 @@ import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "tests"})
+public class Package {
     @JsonProperty("packageId")
     public String getJsScript() {
     }
