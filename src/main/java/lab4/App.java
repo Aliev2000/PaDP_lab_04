@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
 public class App extends AllDirectives {
+    public static final String HOST = "localhost";
     public static final int PORT = 8080;
     public static final int TIMEOUT = 5000;
     public static final String START_MSG = String.format(
