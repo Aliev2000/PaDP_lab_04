@@ -12,4 +12,5 @@ import javax.script.ScriptException;
 
 public class TesterActor extends AbstractActor {
     public void sendToRepository(int packageId, String result) {
+        repository.tell(new TestResult(packageId, result), ActorRef.noSender());
 
