@@ -23,6 +23,8 @@ import java.util.concurrent.CompletionStage;
 public class App extends AllDirectives {
     public static final int PORT = 8080;
     public static final int TIMEOUT = 5000;
+    public static void main(String[] args) throws IOException {
+        System.out.println(START_MSG);
     private Route createRoute(ActorSystem system) {
         ActorRef routerActor = system.actorOf(Props.create(RouterActor.class));
         return route(post(routerActor),
