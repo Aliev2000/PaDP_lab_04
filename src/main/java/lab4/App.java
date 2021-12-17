@@ -31,3 +31,5 @@ public class App extends AllDirectives {
                 }
         );
 
+    private Route get(ActorRef routerActor) {
+
