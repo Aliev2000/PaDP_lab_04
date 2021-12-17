@@ -7,6 +7,7 @@ import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "packageId",
     "tests"})
 public class Package {
     @JsonProperty("functionName") private String functionName;
