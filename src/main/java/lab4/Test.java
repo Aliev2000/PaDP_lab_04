@@ -22,6 +22,8 @@ public class Test {
         return testName;
 
     @JsonProperty("expectedResult")
+    public String getExpectedResult() {
+
     @JsonProperty("params")
     public List<String> getParams() {
         return params;
