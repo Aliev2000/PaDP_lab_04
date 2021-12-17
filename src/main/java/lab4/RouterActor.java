@@ -21,4 +21,7 @@ public class RouterActor extends AbstractActor {
                 .build();
 
     private void runPackage(Package pack) {
+        pack.getTests()
+                .stream()
+                .map(test -> generateTestRequest(pack, test))
     }
