@@ -38,3 +38,5 @@ public class TesterActor extends AbstractActor {
     }
 
     @Override
+    public Receive createReceive() {
+}
