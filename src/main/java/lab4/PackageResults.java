@@ -5,3 +5,5 @@ public class PackageResults {
     private final ArrayList<String> results;
     private final int packageId;
 
+    public PackageResults(int packageId, ArrayList<String> results) {
+}
