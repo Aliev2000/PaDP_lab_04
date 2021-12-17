@@ -10,6 +10,7 @@ public final class TestResult {
         return result;
 
     public int getPackageId() {
+        return packageId;
 
     @Override
     public String toString() {
