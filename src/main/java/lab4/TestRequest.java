@@ -28,3 +28,5 @@ public final class TestRequest {
     public String getRightResult() {
         return rightResult;
 
+    public int getPackageId() {
+}
