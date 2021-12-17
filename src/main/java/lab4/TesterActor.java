@@ -30,4 +30,6 @@ public class TesterActor extends AbstractActor {
         }
         sendToRepository(request.getPackageId(), result);
 
+    public String eval(TestRequest request) throws ScriptException, NoSuchMethodException {
+                .toArray(new String[request.getArguments().size()]);
     @Override
