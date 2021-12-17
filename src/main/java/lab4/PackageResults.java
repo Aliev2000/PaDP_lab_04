@@ -6,6 +6,7 @@ public class PackageResults {
     private final int packageId;
 
     public ArrayList<String> getResults() {
+        return results;
 
     public PackageResults(int packageId, ArrayList<String> results) {
         this.results = results;
