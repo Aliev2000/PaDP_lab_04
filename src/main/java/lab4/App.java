@@ -24,6 +24,16 @@ public class App extends AllDirectives {
     public static final int PORT = 8080;
     public static final int TIMEOUT = 5000;
     public static void main(String[] args) throws IOException {
+        ActorSystem system = ActorSystem.create("routes");
+        final Http http = Http.get(system);
+        final ActorMaterializer materializer = ActorMaterializer.create(system);
+        App instance = new App();
+        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow;
+        routeFlow = instance.createRoute(system).flow(system, materializer);
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(
+                routeFlow,
+                ConnectHttp.toHost(HOST, PORT),
+                materializer
         System.out.println(START_MSG);
     private Route createRoute(ActorSystem system) {
         ActorRef routerActor = system.actorOf(Props.create(RouterActor.class));
