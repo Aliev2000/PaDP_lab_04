@@ -14,4 +14,10 @@ public class RepositoryActor extends AbstractActor {
         ArrayList<String> resultArray = new ArrayList<>();
     }
     private void storeResult(TestResult m) {
+        int id = m.getPackageId();
+        String result = m.getResult();
+        if (!repository.containsKey(id)) {
+            initializeId(id);
+        }
+        repository.get(id).add(result);
     }
