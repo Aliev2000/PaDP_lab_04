@@ -22,4 +22,8 @@ public class RepositoryActor extends AbstractActor {
         repository.get(id).add(result);
     }
     public Receive createReceive() {
+        return ReceiveBuilder.create()
+                .match(TestResult.class, this::storeResult)
+                .match(PackageResultsRequest.class, this::getPackageResults)
+                .build();
 }
