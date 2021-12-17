@@ -7,6 +7,7 @@ import akka.actor.*;
 import akka.routing.RoundRobinPool;
 
 public class RouterActor extends AbstractActor {
+    private final ActorRef repository;
     public AbstractActor.Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Package.class, this::runPackage)
