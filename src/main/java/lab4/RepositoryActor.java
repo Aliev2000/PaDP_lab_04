@@ -21,3 +21,5 @@ public class RepositoryActor extends AbstractActor {
         }
         repository.get(id).add(result);
     }
+    public Receive createReceive() {
+}
