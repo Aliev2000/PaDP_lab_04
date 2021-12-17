@@ -12,3 +12,4 @@ import java.util.List;
 
 public class Test {
     @JsonProperty("testName")
+    private String expectedResult;
