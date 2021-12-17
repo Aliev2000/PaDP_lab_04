@@ -18,6 +18,8 @@ public class Test {
     private List<String> params;
 
     @JsonProperty("testName")
+    public String getTestName() {
+
     @JsonProperty("expectedResult")
     @JsonProperty("params")
     public List<String> getParams() {
