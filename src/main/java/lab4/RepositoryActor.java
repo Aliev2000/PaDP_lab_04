@@ -13,3 +13,5 @@ public class RepositoryActor extends AbstractActor {
     private void initializeId(int id) {
         ArrayList<String> resultArray = new ArrayList<>();
     }
+    private void storeResult(TestResult m) {
+    }
