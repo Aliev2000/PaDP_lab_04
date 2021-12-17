@@ -37,6 +37,8 @@ public class App extends AllDirectives {
                 ConnectHttp.toHost(HOST, PORT),
                 materializer
         System.out.println(START_MSG);
+    }
+
     private Route createRoute(ActorSystem system) {
         ActorRef routerActor = system.actorOf(Props.create(RouterActor.class));
         return route(post(routerActor),
