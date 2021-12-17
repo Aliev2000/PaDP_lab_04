@@ -29,6 +29,7 @@ public class Test {
     public List<String> getParams() {
         return params;
 
+    @JsonProperty("testName")
     public void setTestName(String testName) {
         this.testName = testName;
 
