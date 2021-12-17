@@ -14,4 +14,6 @@ public class Test {
     @JsonProperty("testName")
     @JsonProperty("expectedResult")
     private String expectedResult;
+    public void setTestName(String testName) {
+
     @JsonProperty("expectedResult")
