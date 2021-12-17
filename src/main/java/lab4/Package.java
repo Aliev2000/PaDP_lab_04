@@ -23,6 +23,7 @@ public class Package {
     @JsonProperty("functionName")
     public String getFunctionName() {
     }
+    @JsonProperty("tests")
     public List<Test> getTests() {
     }
     @JsonProperty("packageId")
