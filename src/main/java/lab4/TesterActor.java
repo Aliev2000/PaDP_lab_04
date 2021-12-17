@@ -11,3 +11,5 @@ import javax.script.ScriptException;
 
 
 public class TesterActor extends AbstractActor {
+    public void sendToRepository(int packageId, String result) {
+
